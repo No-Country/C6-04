@@ -38,7 +38,7 @@ const Nft = Schema({
         type: Schema.Types.ObjectId,
         ref: 'User'
     },
-    dateCreated: {
+    date_created: {
         type: Date,
         default: Date.now
     },
@@ -53,6 +53,14 @@ const Nft = Schema({
     files_types: {
         type: Schema.Types.ObjectId,
         ref: 'Files_types'  
+    },
+    collection: {
+        type: Schema.Types.ObjectId,
+        ref: 'Collections'
+    },
+    sale_status: {
+        type: Boolean,
+        default: false
     }
 });
 
