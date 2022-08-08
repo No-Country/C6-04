@@ -15,34 +15,6 @@ const User = Schema({
             }
         } 
     },
-    firstName: {
-        type: String,
-        require: [true, 'First name is required'],
-        validate: {
-            validator: (v) => /^[a-zñáéíóú\s]{3,}$/i.test(v),
-            message: props => {
-               if (props.value.length < 3){
-                  return 'NFT name accept minimun 3 letters';
-               } else {
-                  return 'NFT name only accept letters';
-               }
-            }
-        } 
-    },
-    lastName: {
-        type: String,
-        require: [true, 'Last name is required'],
-        validate: {
-            validator: (v) => /^[a-zñáéíóú\s]{3,}$/i.test(v),
-            message: props => {
-               if (props.value.length < 3){
-                  return 'NFT name accept minimun 3 letters';
-               } else {
-                  return 'NFT name only accept letters';
-               }
-            }
-        } 
-    },
     email: {
         type: String,
         require: [true, 'Email is required'],
@@ -68,6 +40,10 @@ const User = Schema({
     },
     description: {
         type: String
+    },
+    user_type: {
+        type: Schema.Types.ObjectId,
+        ref: 'User_type'
     },
     // estado del usuario confirmacion de mail
     confirm_email: {

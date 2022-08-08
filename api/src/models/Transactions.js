@@ -2,15 +2,15 @@ const { Schema, model } = require('mongoose');
 require('mongoose-double')(mongoose);
 
 const Transactions = Schema({
-    userId: {
+    user_id: {
         type: Schema.Types.ObjectId,
         ref: 'User'
     },
-    nftId: {
+    nft_id: {
         type: Schema.Types.ObjectId,
         ref: 'Nft'
     },
-    creatorId: {
+    creator_id: {
         type: Schema.Types.ObjectId,
         ref: 'Creators'
     },
