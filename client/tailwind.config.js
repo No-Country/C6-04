@@ -28,6 +28,7 @@ module.exports = {
       "main-yellow": "#FCBF29",
       "main-white": "#FFFEFF",
       "main-black": "#202A25",
+      'main-gray': '#D9D9D9',
       "second-blue": "#618AC9",
       "second-yellow": "#F6B138",
       "second-green": "#31968E",
