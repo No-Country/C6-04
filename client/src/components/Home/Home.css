@@ -1,0 +1,262 @@
+
+body {
+  font-family: Sans-Serif;
+  margin: 0;
+  background-image: url('./../../assets/Pictures/menu-log.svg');
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid  #FFFEFF;;
+  color: #cdcdcd;
+  padding: 5px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.menu {
+ margin: 0 20px;
+}
+
+.menu-logo {
+  line-height: 0;
+  margin-left: 60px;
+  width: 80px;
+  height: 46px;
+}
+
+.menu-logo img {
+  width: 80px;
+  line-height: 60px;
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: #FCBF29;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.menu-container a:hover {
+  color: #FFFEFF;
+}
+
+.menu-container input {
+  display: block;
+  -webkit-touch-callout: none;
+}
+
+.menu-index-button {
+  background:#618AC9;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 14px;
+  font-weight: bold;
+  padding: 10px 0;
+  height: 44px;
+  line-height: 20px;
+  width: 440px;
+}
+
+.menu-button {
+  background:#618AC9;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 14px;
+  font-weight: bold;
+  padding: 10px 0;
+  height: 44px;
+  line-height: 20px;
+  width: 44px;
+}
+
+.menu-button-searchbar {
+  background:#618AC9;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 14px;
+  font-weight: bold;
+  padding: 10px 0;
+  height: 44px;
+  line-height: 20px;
+  width: 400px;
+}
+
+.menu-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 100px 0;
+}
+
+.menu-index-diart {
+  width: 260px;
+  margin-left: 25px;
+}
+
+.menu-index-imgHome {
+  width: 300px;
+}
+
+.menu-index-title {
+  color: #FFFEFF;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+  line-height: 26px;
+}
+
+.menu-index-title > span {
+ color: #FCBF29;
+}
+
+.menu-index-button-register {
+  color: #FFFEFF;
+  border: 1px solid #FFFEFF;
+  border-radius: 10px;
+  font-weight: bolder;
+  padding: 2px 18px;
+  margin-top: 10px;
+}
+
+.menu-index-button-register:hover {
+  background:#618AC9;
+}
+
+.menu-index-button-session {
+  background:#618AC9;
+  color: #FFFEFF;
+  border: 1px solid #FFFEFF;
+  border-radius: 10px;
+  font-weight: bolder;
+  padding: 2px 18px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.menu-index-button-session:hover {
+  background: #205EA9;
+}
+
+.menu-section {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  margin: 100px 0 0 100px;
+}
+
+.menu ul {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.menu li {
+  padding: 10px;
+  font-size: 22px;
+}
+
+/* desktop styles */
+@media only screen and (min-width: 768px) { 
+  .menu-container {
+    width: 100%;
+  }
+
+  .menu-container a {
+    color: #FCBF29;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .menu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu ul {
+    display: flex;
+    padding: 0; 
+  }
+}
+
+/* mobile styles */
+@media only screen and (max-width: 767px) { 
+  .menu-container {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .menu-logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .menu-logo img {
+    max-height: 50px;
+    margin: 20px 0;
+  }
+
+  .menu li {
+    padding: 0 10px;
+  }
+
+.menu-button {
+display: none;
+}
+
+.menu-logo img {
+  margin-top: 1px;
+}
+  
+  .menu-index-button {
+    width: 90%;
+  }
+  .menu-container {
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 572px) {
+  .menu-logo img {
+    display: none;
+  }
+
+  .menu-index-imgHome {
+    display: none;
+  }
+  
+  .menu-index-button {
+    width: 90%;
+  }
+
+  .menu-container {
+    height: 70px;
+  }
+
+  .menu-title {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-index-diart {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  
+  .menu li {
+   margin: 0 12px;
+  }
+}
