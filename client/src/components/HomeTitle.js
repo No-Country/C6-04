@@ -1,5 +1,3 @@
-import React from "react";
-
 const HomeTitle = ({ boolean, text, image }) => {
   return (
     <>
