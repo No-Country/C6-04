@@ -1,0 +1,49 @@
+/* Styling for the NavButton modal (modified) */
+
+.modal-box {
+  @apply absolute;
+  @apply top-0;
+  @apply right-0;
+  @apply m-4;
+  @apply w-10/12;
+  @apply md:w-80;
+  @apply sm:w-80;
+  @apply lg:w-80;
+}
+
+.modal-box .modal-list_mainLink {
+  @apply text-main-black;
+  @apply text-2xl;
+  @apply font-bold;
+  @apply hover:font-extrabold;
+  @apply link-hover;
+  @apply cursor-pointer;
+}
+
+.modal-box .modal-list_secLink {
+  @apply text-main-black;
+  @apply text-lg;
+  @apply font-semibold;
+  @apply hover:font-bold;
+  @apply link-hover;
+  @apply cursor-pointer;
+}
+
+.modal-box .modal-list_logLink {
+  @apply text-second-blue;
+  @apply text-lg;
+  @apply font-bold;
+  @apply hover:font-extrabold;
+  @apply link-hover;
+  @apply cursor-pointer;
+}
+
+.modal-box .modal-list_socialLink {
+  @apply w-6;
+  @apply md:w-8;
+  @apply lg:w-9;
+  @apply hover:pb-2;
+  @apply hover:cursor-pointer;
+}
+
+/* __________________________________________ */
