@@ -4,10 +4,12 @@ import ImgTitle2 from "./../assets/Pictures/peep-9.svg";
 import Carousel from "./../components/Carousel";
 import BoxTrend from "./../components/BoxTrend";
 import Button from "./../components/Button";
+import Footer from './../components/Footer'
+import "./../index.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-main">
       <section>
         {/* NFT Colection */}
         <HomeTitle boolean={true} text="Colecciones" image={ImgTitle1} />
@@ -19,12 +21,17 @@ const Home = () => {
         <HomeTitle boolean={false} text="Tendencias de NFT" image={ImgTitle2} />
         <BoxTrend />
 
-        <article className="flex flex-column justify-center">
+        <article className="flex flex-column justify-center mb-20">
           <Button
             text="Explorar"
             className="btn bg-blue-600 text-lg font-black hover:bg-blue-700 border-none"
           />
         </article>
+      </section>
+
+      {/* NFT Trend */}
+      <section>
+        <Footer />
       </section>
     </div>
   );
