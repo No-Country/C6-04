@@ -1,11 +1,11 @@
-import ModalChildren from './modalChildren';
-import GoogleLogInOut from './googleLoginLogout/googleLoginLogout'
+// import ModalChildren from './modalChildren';
+import Pantalla from './PantallaNFT';
 
 function App() {
   return (
     <div className="App">
-      <ModalChildren/>
-      <GoogleLogInOut/>
+      {/* <ModalChildren /> */}
+      <Pantalla/>
     </div>
   );
 }
