@@ -4,9 +4,7 @@ import Input from './components/input/input'
 import Boton from './components/botones/boton'
 import Google from './assets/Icons/google.svg';
 import useToggle from "./hooks/useToggle";
-
 import ModalBox from "./components/Modal/ModalBox";
-
 import { useState } from "react";
 
 function VentanasModales() {

@@ -1,11 +1,13 @@
 // import ModalChildren from './modalChildren';
-import Pantalla from './PantallaNFT';
+// import Pantalla from './PantallaNFT';
+import ModalMensaje from "./components/Modal/modalMensaje";
 
 function App() {
   return (
     <div className="App">
       {/* <ModalChildren /> */}
-      <Pantalla/>
+      {/* <Pantalla/> */}
+      <ModalMensaje/>
     </div>
   );
 }
