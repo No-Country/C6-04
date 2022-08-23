@@ -15,7 +15,7 @@ const Home = () => {
       <HeaderHome />
 
       <section>
-        {/* NFT Colection */}
+        {/* NFT Collection */}
         <HomeTitle boolean={true} text="Colecciones" image={ImgTitle1} />
         <Carousel />
       </section>
