@@ -16,16 +16,16 @@ const Pantalla = () => {
   };
 
   return (
-    <div className="h-screen w-screen bg-main-blue flex justify-center items-center p-16">
-      <div className="w-full h-full bg-blue-400/40 flex rounded-lg p-10 ">
+    <div className="md:h-screen h-full w-screen bg-main-blue flex justify-center items-center p-2 md:p-16">
+      <div className="w-full h-full bg-blue-400/40 md:flex rounded-lg p-10 flex-col md:flex-row ">
 
         {/* //Contenedor izquierdo */}
-        <section className="w-1/2 h-full grid place-items-center">
-          <article className="h-80 w-80 rounded-lg ">
+        <section className="md:w-1/2 md:h-full md:grid md:place-items-center ">
+          <article className="md:h-80 md:w-80 w-60 h-60 ">
             <img
               src={Mico}
               alt="Mico"
-              className="cursor-pointer"
+              className="cursor-pointer w-50 h-60 md:h-80 md:w-80 rounded-lg"
               onClick={() => handleClick()}
             />
 
@@ -37,26 +37,26 @@ const Pantalla = () => {
             )}
           </article>
 
-          <article className="h-16 w-80 bg-second-blue rounded-lg grid place-items-center">
+          <article className="md:h-16 md:w-80 w:40 h-14 bg-second-blue rounded-lg grid place-items-center m-2">
             <Label text="Precio actual" className="text-white font-bold text-xl" ></Label>
             <Label text="0.0099 ETH" className="text-black font-bold " ></Label>
           </article>
         </section>
  
         {/* //Contenedor derecho */}
-        <section className="w-1/2 h-full p-1">
+        <section className="w-60 h-full  md:w-1/2 md:h-full md:p-1">
 
-          <Title text="RareApepeYachtClub" className="text-lg font-bold my-1" />
+          <Title text="RareApepeYachtClub" className="md:text-lg font-bold my-1" />
 
-          <Title text="Rare Apepe #5489" className="text-3xl font-bold" />
+          <Title text="Rare Apepe #5489" className="text-2xl md:text-3xl font-bold" />
           <br />
           <Label
             text="Este Rare Apepe es un homenaje a Bored Ape #3854. Ademas de ser reconocido por haber salido a la luz por Bored Ape #3854"
             className="font-inter" />
           <Title text="Atributos" className="text-2xl font-bold" />
 
-          <div className="grip place-items-left">
-            <article className="grid grid-cols-2 gap-4 w-96">
+          <div className="md:grip md:place-items-left">
+            <article className="grid grid-cols-2 gap-4 md:w-96">
               <Card text="Fondo" text2="Gris" />
               <Card text="Ropa" text2="Camiseta sin color" />
               <Card text="Ojos" text2="Somnoliento" />
@@ -66,10 +66,10 @@ const Pantalla = () => {
             </article>
           </div>
 
-          <div className="w-96 grid place-items-center">
-            <article className="w-60 h-16 bg-second-blue rounded-lg flex p-2 gap-5 content-center justify-center m-3">
-              <article className=" bg-second-green rounded-lg p-3 font-bold">
-                <Boton text="Comprar ahora  " />
+          <div className="md:w-96 grid place-items-center">
+            <article className="md:w-60 md:h-16 w-52 h-14 bg-second-blue rounded-lg flex p-2 gap-5 content-center justify-center m-3">
+              <article className=" bg-second-green rounded-lg md:p-3 p-2 font-bold w-44">
+                <Boton text="Comprar ahora" />
               </article>
 
               <article className=" bg-main-yellow rounded-lg px-1">

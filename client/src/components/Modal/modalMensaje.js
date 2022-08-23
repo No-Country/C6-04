@@ -28,18 +28,18 @@ function ModalMensaje() {
           }}
         >
           {ventanas === 1 && (
-            <div className=' px-10 py-5' >
 
+            <div className='px-1 py-2  md:px-10 md:py-5'>
 
-              <div className="grid place-items-center">
+              <div className="flex justify-center items-center content-center mx-12" >
                 <img src={Comprobado} alt="Comprobar" className='' />
               </div>
 
-              <Title text='¡Gracias por registrarte!' className='text-3xl font-bold text-black tracking-tighter grid place-items-center' />
+              <Title text='¡Gracias por registrarte!' className='md:text-3xl text-xl font-bold text-black tracking-tighter flex justify-center' />
 
               <br />
 
-              <div class='grid place-items-center '>
+              <div class='grid place-items-center md:text-base'>
                 <p>En 10 minutos recibirás un email</p>
                 <p>de confirmación, con el link para</p>
                 <p>acceder a tu cuenta. Si no aparece</p>
@@ -48,7 +48,8 @@ function ModalMensaje() {
               </div>
 
               <br />
-              <Boton className='flex items-center justify-center active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out transform py-2  rounded-full text-white font-semibold text-lg   w-full bg-main-blue' text='Entendido' />
+
+              <Boton className='flex items-center justify-center active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out transform py-2  rounded-full text-white font-semibold md:text-lg w-full bg-main-blue ' text='Entendido' />
             </div>
           )}
 
