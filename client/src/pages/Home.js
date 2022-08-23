@@ -1,3 +1,4 @@
+import HeaderHome from '../components/HeaderHome'
 import HomeTitle from "./../components/HomeTitle";
 import ImgTitle1 from "./../assets/Pictures/peep-7.svg";
 import ImgTitle2 from "./../assets/Pictures/peep-9.svg";
@@ -10,6 +11,9 @@ import "./../index.css";
 const Home = () => {
   return (
     <div className="bg-main">
+
+      <HeaderHome />
+
       <section>
         {/* NFT Colection */}
         <HomeTitle boolean={true} text="Colecciones" image={ImgTitle1} />
