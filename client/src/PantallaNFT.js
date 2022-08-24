@@ -16,11 +16,11 @@ const Pantalla = () => {
   };
 
   return (
-    <div className="md:h-screen h-full w-screen bg-main-blue flex justify-center items-center p-2 md:p-16">
-      <div className="w-full h-full bg-blue-400/40 md:flex rounded-lg p-10 flex-col md:flex-row ">
+    <div className="md:h-screen h-full w-screen bg-main-blue flex justify-center items-center p-2 md:p-9 lg:p-16">
+      <div className="w-full h-full bg-blue-400/40 md:flex rounded-lg p-10 md:p-1 lg:p-10 flex-col md:flex-row ">
 
         {/* //Contenedor izquierdo */}
-        <section className="md:w-1/2 md:h-full md:grid md:place-items-center ">
+        <section className="md:w-1/2 sm:h-full md:grid md:place-items-center ">
           <article className="md:h-80 md:w-80 w-60 h-60 ">
             <img
               src={Mico}
@@ -37,14 +37,14 @@ const Pantalla = () => {
             )}
           </article>
 
-          <article className="md:h-16 md:w-80 w:40 h-14 bg-second-blue rounded-lg grid place-items-center m-2">
+          <article className="md:h-16 md:w-80 w-56 h-14 bg-second-blue rounded-lg grid place-items-center m-2">
             <Label text="Precio actual" className="text-white font-bold text-xl" ></Label>
             <Label text="0.0099 ETH" className="text-black font-bold " ></Label>
           </article>
         </section>
  
         {/* //Contenedor derecho */}
-        <section className="w-60 h-full  md:w-1/2 md:h-full md:p-1">
+        <section className="w-60 h-full md:w-1/2 md:h-full md:p-1">
 
           <Title text="RareApepeYachtClub" className="md:text-lg font-bold my-1" />
 
@@ -72,7 +72,7 @@ const Pantalla = () => {
                 <Boton text="Comprar ahora" />
               </article>
 
-              <article className=" bg-main-yellow rounded-lg px-1">
+              <article className=" bg-main-yellow rounded-lg px-1 p-2 ">
                 <Boton google={Carrito} />
               </article>
             </article>

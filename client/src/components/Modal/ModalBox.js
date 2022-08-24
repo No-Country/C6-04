@@ -9,7 +9,6 @@ const ModalBox = ({ onClick, children, imagen }) => {
     <div className='rounded-3xl border-4 border-main-blue' >
 
       <BotonClose close={Close} alt='Close icon' className='float-right ' onclick={() => onClick()} />
-      {/* <img src={imagen} alt="Comprobar" className='flex justify-center items-center content-center z-50' /> */}
       <>
         {children}
       </>

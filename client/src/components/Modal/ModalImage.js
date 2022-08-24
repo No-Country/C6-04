@@ -7,9 +7,9 @@ const ModalImage = ({ clickedImg, setClickedImg }) => {
   };
   return (
     <>
-      <div className="absolute h-full  w-screen inset-0 z-50 backdrop-blur-xl" onClick={handleClick} >
+      <div className="absolute h-full w-screen inset-0 z-50 backdrop-blur-xl" onClick={handleClick} >
 
-        <img src={clickedImg} alt="Mico" className='w-full h-full m-0 px-96 py-20 cursor-pointer ' />
+        <img src={clickedImg} alt="Mico" className='w-72 m-4 pt-32 md:w-full md:h-full md:m-0 md:px-[160px] md:py-20 lg:px-52 lg:py-20 cursor-pointer' />
 
       </div>
     </>

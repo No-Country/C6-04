@@ -1,4 +1,4 @@
-// import ModalChildren from './modalChildren';
+// import ModalChildren from './components/Modal/modalChildren';
 import Pantalla from './PantallaNFT';
 // import ModalMensaje from "./components/Modal/modalMensaje";
 

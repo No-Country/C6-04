@@ -1,10 +1,10 @@
-import Title from "./components/title/title";
-import Label from './components/label/label'
-import Input from './components/input/input'
-import Boton from './components/botones/boton'
-import Google from './assets/Icons/google.svg';
-import useToggle from "./hooks/useToggle";
-import ModalBox from "./components/Modal/ModalBox";
+import Title from "../title/title";
+import Label from '../label/label'
+import Input from '../input/input'
+import Boton from '../botones/boton'  
+import Google from '../../assets/Icons/google.svg';
+import useToggle from "../../hooks/useToggle";
+import ModalBox from "./ModalBox";
 import { useState } from "react";
 
 function VentanasModales() {
@@ -83,31 +83,31 @@ function VentanasModales() {
 
           {ventanas === 3 && (
             <div className='px-5 py-1 md:px-10 md:py-5' >
-              
-                <Title text='Registro' className='text-4xl md:text-4xl font-bold text-main-blue tracking-tighter grid place-items-start' />
 
-                <Label text='Ingresa tu email' className='text-sm md:text-lg font-bold' />
-                <Input className='h-9 w-64 md:w-full border border-black rounded-xl md:p-2 bg-transparent' text='Ingrese su correo electrónico' />
-                
-                {/* <br /> */}
-                <Label text='Ingresa tu contraseña' className='text-sm md:text-lg font-bold' />
-                <Input className='h-9 w-64 md:w-full border border-black rounded-xl md:p-2 bg-transparent' text='Ingrese su contraseña' types='password' />
+              <Title text='Registro' className='text-4xl md:text-4xl font-bold text-main-blue tracking-tighter grid place-items-start' />
 
-                {/* <br /> */}
-                <Label text='Confirma tu contraseña' className='text-sm md:text-lg font-bold' />
-                <Input className='h-9 w-64 md:w-full border border-black rounded-xl md:p-2 bg-transparent' text='Ingrese su contraseña' types='password' />
+              <Label text='Ingresa tu email' className='text-sm md:text-lg font-bold' />
+              <Input className='h-9 w-64 md:w-full border border-black rounded-xl md:p-2 bg-transparent' text='Ingrese su correo electrónico' />
 
-                {/* <br /> */}
-                <Label text='Ingrese su nombre de usuario' className='text-sm md:text-lg font-bold' />
-                <Input className='h-9 w-64 md:w-full border border-black rounded-xl md:p-2 bg-transparent' text='Ingrese su usuario' />
+              {/* <br /> */}
+              <Label text='Ingresa tu contraseña' className='text-sm md:text-lg font-bold' />
+              <Input className='h-9 w-64 md:w-full border border-black rounded-xl md:p-2 bg-transparent' text='Ingrese su contraseña' types='password' />
 
-                <div className=" text-xs md:m-2 md:py-2">
-                  <Label text='Al registrarte, confirmas que aceptas nuestros Términos ' className='text-decoration-line: underline cursor-pointer' />
-                  <Label text='y Condiciones, así como nuestra Política de Privacidad. ' className='text-decoration-line: underline cursor-pointer' />
-                </div>
+              {/* <br /> */}
+              <Label text='Confirma tu contraseña' className='text-sm md:text-lg font-bold' />
+              <Input className='h-9 w-64 md:w-full border border-black rounded-xl md:p-2 bg-transparent' text='Ingrese su contraseña' types='password' />
 
-                <Boton className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out transform py-2  rounded-full text-white font-semibold text-lg   w-full bg-main-blue m-2' text='Registrarme' />
+              {/* <br /> */}
+              <Label text='Ingrese su nombre de usuario' className='text-sm md:text-lg font-bold' />
+              <Input className='h-9 w-64 md:w-full border border-black rounded-xl md:p-2 bg-transparent' text='Ingrese su usuario' />
+
+              <div className=" text-xs md:m-2 md:py-2">
+                <Label text='Al registrarte, confirmas que aceptas nuestros Términos ' className='text-decoration-line: underline cursor-pointer' />
+                <Label text='y Condiciones, así como nuestra Política de Privacidad. ' className='text-decoration-line: underline cursor-pointer' />
               </div>
+
+              <Boton className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out transform py-2  rounded-full text-white font-semibold text-lg   w-full bg-main-blue m-2' text='Registrarme' />
+            </div>
           )}
         </ModalBox>
       )}
