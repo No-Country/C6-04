@@ -1,6 +1,6 @@
-import Logo from "./../assets/Pictures/logo.svg";
-import Search from "../assets/Icons/search.svg";
-import Points from "../assets/Icons/points.svg";
+import Logo from "./../../assets/Pictures/logo.svg";
+import Search from "../../assets/Icons/search.svg";
+import NavModal from "./NavModal";
 
 const NavBar = () => {
   return (
@@ -26,9 +26,9 @@ const NavBar = () => {
           />
         </div>
         {/* button */}
-        <button className="btn bg-second-blue hover:bg-main-blue border-2 border-white hover:border-white h-6 mx-2 my-2 md:my-0 rounded-2xl">
-          <img src={Points} alt="Menu" className="w-12 mb-6" />
-        </button>
+        
+        <NavModal />
+
       </article>
     </nav>
   );
