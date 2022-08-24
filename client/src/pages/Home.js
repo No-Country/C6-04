@@ -1,11 +1,12 @@
-import HeaderHome from '../components/HeaderHome'
-import HomeTitle from "./../components/HomeTitle";
-import ImgTitle1 from "./../assets/Pictures/peep-7.svg";
-import ImgTitle2 from "./../assets/Pictures/peep-9.svg";
-import Carousel from "./../components/Carousel";
-import BoxTrend from "./../components/BoxTrend";
-import Button from "./../components/Button";
-import Footer from './../components/Footer'
+import HeaderHome from '../components/homeSections/HeaderHome'
+import HomeTitle from "./../components/homeSections/HomeTitle"
+import Carousel from "./../components/homeSections/Carousel"
+import BoxTrend from "./../components/homeSections/BoxTrend"
+import CategoriesContainer from '../components/homeSections/CategoriesContainer'
+import Footer from './../components/homeSections/Footer'
+import Button from "./../components/Button"
+import ImgTitle1 from "./../assets/Pictures/peep-7.svg"
+import ImgTitle2 from "./../assets/Pictures/peep-9.svg"
 import "./../index.css";
 
 const Home = () => {
@@ -35,6 +36,7 @@ const Home = () => {
 
       {/* NFT Trend */}
       <section>
+        <CategoriesContainer />
         <Footer />
       </section>
     </div>

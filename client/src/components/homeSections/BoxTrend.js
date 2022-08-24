@@ -1,6 +1,6 @@
 import React from "react";
 import ItemTrend from "./ItemTrend";
-import useCount from "../hooks/useCount";
+import useCount from "../../hooks/useCount";
 
 const BoxTrend = () => {
   const array = [

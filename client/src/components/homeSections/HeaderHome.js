@@ -1,6 +1,6 @@
-import Diart from "./../assets/Pictures/diart-logo.svg";
-import ImageRight from "./../assets/Pictures/img-right.svg";
-import Button from "./Button";
+import Diart from "./../../assets/Pictures/diart-logo.svg";
+import ImageRight from "./../../assets/Pictures/img-right.svg";
+import Button from "../Button";
 
 const HeaderHome = () => {
   return (

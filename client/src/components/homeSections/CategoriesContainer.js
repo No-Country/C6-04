@@ -1,6 +1,6 @@
 import React from "react";
 import Category from "./Category";
-import PeepBicycle from "../assets/Pictures/peep-8.svg";
+import PeepBicycle from "../../assets/Pictures/peep-8.svg";
 import HomeTitle from "./HomeTitle";
 
 function CategoriesContainer() {

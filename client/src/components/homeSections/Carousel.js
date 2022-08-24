@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
-import arrow from "./../assets/Icons/arrow.svg";
+import arrow from "./../../assets/Icons/arrow.svg";
 // Data
-import data from "./data.json";
+import data from "./../data.json";
 
 const Carousel = () => {
   const maxScrollWidth = useRef(0);
