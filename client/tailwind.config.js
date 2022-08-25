@@ -33,8 +33,11 @@ module.exports = {
       "second-yellow": "#F6B138",
       "second-green": "#31968E",
       "second-red": "#CE433F",
+      "second-white": "#D9D9FF",
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 };

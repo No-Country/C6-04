@@ -60,10 +60,10 @@ const Pantalla = () => {
           <Title text="Rare Apepe #5489" className="text-2xl md:text-3xl font-bold" />
           <br />
 
-          <article className="bg-red-300 w-50 h-12 ">
+          
           {/* <Label className="text-ellipsis overflow-hidden w-10 h-12 relative" text="Este Rare Apepe es un homenaje a Bored Ape #3854. Ademas de ser reconocido por haber salido a la luz por Bored Ape #3854 Mañana veremos que se hace"></Label> */}
-          <p className="text-ellipsis overflow-hidden w-62 h-12 relative">Este Rare Apepe es un homenaje a Bored Ape #3854. Ademas de ser reconocido por haber salido a la luz por Bored Ape #3854 Mañana veremos</p>
-          </article>
+          <p className="text-ellipsis overflow-hidden xl:w-[550px] line-clamp-2">Este Rare Apepe es un homenaje a Bored Ape #3854. Ademas de ser reconocido por haber salido a la luz por Bored Ape #3854 Ademas de ser un nft </p>
+          
           <Title text="Atributos" className="text-2xl font-bold my-4" />
 
           <div className="md:grip md:place-items-left">
@@ -77,8 +77,8 @@ const Pantalla = () => {
             </article>
           </div>
 
-          <div className="md:w-96 grid place-items-center">
-            <article className="md:w-60 md:h-16 h-14 bg-second-white bg-opacity-40 rounded-lg flex p-2 gap-5 content-center justify-center m-3">
+          <div className="md:w-96 md:mx-6">
+            <article className="md:w-60 md:h-16 h-14 bg-second-white bg-opacity-40 rounded-lg flex p-2 gap-5 content-center justify-center m-2 md:m-4">
               <article className=" bg-second-green rounded-lg md:p-3 p-2 font-black w-44 md:text-lg">
                 <Boton text="Comprar ahora" />
               </article>
