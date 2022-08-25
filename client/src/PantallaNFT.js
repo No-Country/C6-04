@@ -6,6 +6,7 @@ import Mico from "./assets/Pictures/Mico.jpg";
 import Carrito from "./assets/Icons/carrito.svg";
 import Boton from "./components/botones/boton";
 import ModalImage from "./components/Modal/ModalImage";
+import Expandir from "./assets/Icons/Expandir.svg";
 
 const Pantalla = () => {
 
@@ -16,8 +17,8 @@ const Pantalla = () => {
   };
 
   return (
-    <div className="md:h-screen h-full w-screen bg-main-blue flex justify-center items-center p-2 md:p-9 lg:p-16">
-      <div className="w-full h-full bg-blue-400/40 md:flex rounded-lg p-10 md:p-1 lg:p-10 flex-col md:flex-row ">
+    <div className="md:h-screen h-full w-screen bg-main-blue flex justify-center items-center p-2 md:p-3 lg:p-[71px] xl:p-[40px]">
+      <div className="w-full h-full bg-second-blue md:flex rounded-lg p-10 md:p-1 lg:p-10 flex-col md:flex-row">
 
         {/* //Contenedor izquierdo */}
         <section className="md:w-1/2 sm:h-full md:grid md:place-items-center ">
@@ -25,9 +26,17 @@ const Pantalla = () => {
             <img
               src={Mico}
               alt="Mico"
-              className="cursor-pointer w-50 h-60 md:h-80 md:w-80 rounded-lg"
-              onClick={() => handleClick()}
+              className="w-50 h-60 md:h-80 md:w-80 rounded-lg absolute z-10"
             />
+            <div className="float-right ">
+              <img
+                src={Expandir}
+                alt="Expandir"
+                // className="cursor-pointer w-8 h-6 p-1 md:w-10 md:h-10 rounded-lg relative z-10"
+                className="cursor-pointer w-16 p-2 rounded-lg relative z-10"
+                onClick={() => handleClick()}
+              />
+            </div>
 
             {clickedImg && (
               <ModalImage
@@ -37,23 +46,25 @@ const Pantalla = () => {
             )}
           </article>
 
-          <article className="md:h-16 md:w-80 w-56 h-14 bg-second-blue rounded-lg grid place-items-center m-2">
-            <Label text="Precio actual" className="text-white font-bold text-xl" ></Label>
+          <article className="md:h-16 md:w-80 w-56 h-14 bg-second-white bg-opacity-40 rounded-lg grid place-items-center m-2 font-black text-xl">
+            <Label text="Precio actual" className="text-white font-bold text-2xl" ></Label>
             <Label text="0.0099 ETH" className="text-black font-bold " ></Label>
           </article>
         </section>
- 
+
         {/* //Contenedor derecho */}
-        <section className="w-60 h-full md:w-1/2 md:h-full md:p-1">
+        <section className="w-60 md:w-1/2 md:p-1">
 
           <Title text="RareApepeYachtClub" className="md:text-lg font-bold my-1" />
 
           <Title text="Rare Apepe #5489" className="text-2xl md:text-3xl font-bold" />
           <br />
-          <Label
-            text="Este Rare Apepe es un homenaje a Bored Ape #3854. Ademas de ser reconocido por haber salido a la luz por Bored Ape #3854"
-            className="font-inter" />
-          <Title text="Atributos" className="text-2xl font-bold" />
+
+          <article className="bg-red-300 w-50 h-12 ">
+          {/* <Label className="text-ellipsis overflow-hidden w-10 h-12 relative" text="Este Rare Apepe es un homenaje a Bored Ape #3854. Ademas de ser reconocido por haber salido a la luz por Bored Ape #3854 Mañana veremos que se hace"></Label> */}
+          <p className="text-ellipsis overflow-hidden w-62 h-12 relative">Este Rare Apepe es un homenaje a Bored Ape #3854. Ademas de ser reconocido por haber salido a la luz por Bored Ape #3854 Mañana veremos</p>
+          </article>
+          <Title text="Atributos" className="text-2xl font-bold my-4" />
 
           <div className="md:grip md:place-items-left">
             <article className="grid grid-cols-2 gap-4 md:w-96">
@@ -67,8 +78,8 @@ const Pantalla = () => {
           </div>
 
           <div className="md:w-96 grid place-items-center">
-            <article className="md:w-60 md:h-16 w-52 h-14 bg-second-blue rounded-lg flex p-2 gap-5 content-center justify-center m-3">
-              <article className=" bg-second-green rounded-lg md:p-3 p-2 font-bold w-44">
+            <article className="md:w-60 md:h-16 h-14 bg-second-white bg-opacity-40 rounded-lg flex p-2 gap-5 content-center justify-center m-3">
+              <article className=" bg-second-green rounded-lg md:p-3 p-2 font-black w-44 md:text-lg">
                 <Boton text="Comprar ahora" />
               </article>
 
