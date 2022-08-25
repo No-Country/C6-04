@@ -28,7 +28,7 @@ module.exports = {
       "main-yellow": "#FCBF29",
       "main-white": "#FFFEFF",
       "main-black": "#202A25",
-      'main-gray': '#D9D9D9',
+      "main-gray": "#D9D9D9",
       "second-blue": "#618AC9",
       "second-yellow": "#F6B138",
       "second-green": "#31968E",
@@ -37,14 +37,8 @@ module.exports = {
     },
     extend: {},
   },
-<<<<<<< HEAD
-  plugins: [
-    require('@tailwindcss/line-clamp'),
-  ],
-=======
   daisyui: {
     themes: false,
   },
   plugins: [require("daisyui")],
->>>>>>> bd776c74b4161b3b4241db498131e19f8efa1e53
 };
