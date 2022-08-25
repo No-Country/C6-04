@@ -1,6 +1,7 @@
 import Logo from "./../../assets/Pictures/logo.svg";
 import Search from "../../assets/Icons/search.svg";
 import NavModal from "./NavModal";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -8,9 +9,9 @@ const NavBar = () => {
       {/* logo y banner */}
       <article className="flex justify-center items-center flex-col md:flex-row">
         <img src={Logo} alt="Logo" className="h-14 md:mx-6" />
-        <a className="text-2xl font-bold text-main-yellow uppercase hidden md:block" href="/">
+        <NavLink className="text-2xl font-bold text-main-yellow uppercase hidden md:block" to="/">
           Digital Art is Art
-        </a>
+        </NavLink>
       </article>
 
       <article className="flex justify-center items-center w-fit flex-col md:flex-row">

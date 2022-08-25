@@ -19,3 +19,7 @@ code {
   background-image: url("./assets/Homebackground.svg");
   background-size: static;
 }
+
+.stroke-pages {
+  -webkit-text-stroke: 1.5px #F6B138; 
+}

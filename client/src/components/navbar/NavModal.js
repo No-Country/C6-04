@@ -2,6 +2,7 @@ import ButtonActive from "./ButtonActive";
 import SocialMedia from "./SocialMedia";
 import closeButton from "./../../assets/Icons/close.svg";
 import "./NavModal.css";
+import { NavLink } from "react-router-dom";
 
 const NavModal = () => {
   const options = [
@@ -22,17 +23,17 @@ const NavModal = () => {
     },
     {
       name: "Acerca de",
-      to: "Nosotros",
+      to: "/acerca-de",
       font: false,
     },
     {
       name: "Nosotros",
-      to: "/",
+      to: "/nosotros",
       font: false,
     },
     {
       name: "Equipo",
-      to: "/",
+      to: "/equipo",
       font: false,
     },
   ];
@@ -57,7 +58,7 @@ const NavModal = () => {
           <ul className="my-8 w-fit">
             {options.map((op) => (
               <>
-                {!op.font && <li className="modal-list_mainLink">{op.name}</li>}
+                {op.font && <li className="modal-list_mainLink">{op.name}</li>}
               </>
             ))}
           </ul>
@@ -66,7 +67,7 @@ const NavModal = () => {
           <ul className="my-8 w-fit">
             {options.map((op) => (
               <>
-                {!op.font && <li className="modal-list_secLink">{op.name}</li>}
+                {!op.font && <li className="modal-list_secLink"><NavLink to={op.to}>{op.name}</NavLink></li>}
               </>
             ))}
           </ul>
