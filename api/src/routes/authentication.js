@@ -13,7 +13,6 @@ router.post('/',
     login
 );
 router.post('/google', googleSignIn);
-router.get('/renew', validarJwt, renewToken)
 
 
 module.exports = router;

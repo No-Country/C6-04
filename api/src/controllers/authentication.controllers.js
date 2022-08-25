@@ -40,7 +40,6 @@ const login = async (req, res) => {
 
 const googleSignIn = async (req, res) => {
     const googleToken = req.body.tokenId;
-    const { givenName, familyName } = req.body;
     try {
         const { name, email, img } = await googleVerify(googleToken);
         const usuarioDb = await User.findOne({ email });// busca si existe el email
@@ -57,15 +56,16 @@ const googleSignIn = async (req, res) => {
                 user_type: user_type._id,
                 confirm_email:true
             });
+            await usuario.save();// Crea nuevo usuario en la base de datos
+            res.json({
+            ok: true,
+            usuario
+            });
+
         }
         else{
             usuario = usuarioDb;// si existe el email continua con la cuenta existente 
         }
-        await usuario.save();// debe ir dentro del if?
-        res.json({
-            ok: true,
-            usuario
-        });
     } catch (error) {
         console.log(error);
         res.status(500).json({
