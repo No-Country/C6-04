@@ -1,11 +1,12 @@
 import Title from "../title/title";
 import Label from '../label/label'
 import Input from '../input/input'
-import Boton from '../botones/boton'  
+import Boton from '../botones/boton'
 import Google from '../../assets/Icons/google.svg';
 import useToggle from "../../hooks/useToggle";
 import ModalBox from "./ModalBox";
 import { useState } from "react";
+import Comprobado from "../../assets/Icons/comprobado.svg";
 
 function VentanasModales() {
 
@@ -106,7 +107,33 @@ function VentanasModales() {
                 <Label text='y Condiciones, así como nuestra Política de Privacidad. ' className='text-decoration-line: underline cursor-pointer' />
               </div>
 
-              <Boton className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out transform py-2  rounded-full text-white font-semibold text-lg   w-full bg-main-blue m-2' text='Registrarme' />
+              <Boton className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out transform py-2  rounded-full text-white font-semibold text-lg   w-full bg-main-blue m-2' text='Registrarme'  onClick={() => { setVentanas(4) }} />
+            </div>
+          )}
+
+          {ventanas === 4 && (
+
+            <div className='px-1 py-2  md:px-10 md:py-5'>
+
+              <div className="flex justify-center items-center content-center mx-12" >
+                <img src={Comprobado} alt="Comprobar" className='' />
+              </div>
+
+              <Title text='¡Gracias por registrarte!' className='md:text-3xl text-xl font-bold text-black tracking-tighter flex justify-center' />
+
+              <br />
+
+              <div class='grid place-items-center md:text-base'>
+                <p>En 10 minutos recibirás un email</p>
+                <p>de confirmación, con el link para</p>
+                <p>acceder a tu cuenta. Si no aparece</p>
+                <p>en tu bandeja de entrada, verifica</p>
+                <p>en tu carpeta de spam.</p>
+              </div>
+
+              <br />
+
+              <Boton className='flex items-center justify-center active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out transform py-2  rounded-full text-white font-semibold md:text-lg w-full bg-main-blue ' text='Entendido' />
             </div>
           )}
         </ModalBox>
