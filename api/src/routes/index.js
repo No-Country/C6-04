@@ -8,6 +8,7 @@ router.use('/collection', require('./collection'));
 router.use('/categories', require('./categories'));
 router.use('/creators', require('./creators'));
 router.use('/currencies', require('./currencies'));
+router.use('/auth', require('./authentication'));
 
 
 module.exports = router;
