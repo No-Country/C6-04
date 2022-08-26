@@ -14,3 +14,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-main {
+  background-image: url("./assets/Homebackground.svg");
+  background-size: static;
+}
+
+.stroke-pages {
+  -webkit-text-stroke: 1.5px #F6B138; 
+}
