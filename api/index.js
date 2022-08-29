@@ -27,12 +27,12 @@ server.use(express.urlencoded({ extended: true }));
 
 //control de errores
 
-server.use(function(req, res, next) {
+/*server.use(function(req, res, next) {
     const status = err.status || 500;
     const message = err.message || err;
     console.error(err);
     res.status(status).send(message);
-});
+});*/
 
 server.listen(process.env.PORT, () => {
     console.log(`Server connected in port :${process.env.PORT}`);
