@@ -9,7 +9,10 @@ const NavBar = () => {
       {/* logo y banner */}
       <article className="flex justify-center items-center flex-col md:flex-row">
         <img src={Logo} alt="Logo" className="h-14 md:mx-6" />
-        <NavLink className="text-2xl font-bold text-main-yellow uppercase hidden md:block" to="/">
+        <NavLink
+          className="text-2xl font-bold text-main-white uppercase hidden md:block"
+          to="/"
+        >
           Digital Art is Art
         </NavLink>
       </article>
@@ -22,10 +25,10 @@ const NavBar = () => {
           </div>
           <input
             type="text"
-            className="input input-warning input-info bg-second-blue px-12 h-12 opacity-75 placeholder:text-white text-white border-2 border-main-white text-sm rounded-2xl"
+            className="input input-warning bg-second-blue px-12 h-12 opacity-75 placeholder:text-white text-white border-2 border-main-white text-sm rounded-2xl"
             placeholder="Colecciones, NFTs o usuarios."
           />
-          <div class="text-white font-bold text-sm bg-main-white bg-opacity-30 py-0.5 px-2 rounded-lg absolute hidden md:block md:right-2.5 top-3">
+          <div className="text-white font-bold text-sm bg-main-white bg-opacity-30 py-0.5 px-2 rounded-lg absolute hidden md:block md:right-2.5 top-3">
             F
           </div>
         </div>

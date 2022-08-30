@@ -233,7 +233,7 @@ function ModalsAuth({ boolean }) {
 
               <br />
 
-              <div class="grid place-items-center md:text-base">
+              <div className="grid place-items-center md:text-base">
                 <p>En 10 minutos recibirás un email</p>
                 <p>de confirmación, con el link para</p>
                 <p>acceder a tu cuenta. Si no aparece</p>

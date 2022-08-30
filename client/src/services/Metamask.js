@@ -54,10 +54,10 @@ function App() {
   }, []);
 
   return (
-    <article class="indicator">
+    <article className="indicator">
       {/* ¿ Online or Offline ? */}
       <span
-        class={`indicator-item badge ${
+        className={`indicator-item badge ${
           currentAccount
             ? "badge-success bg-second-green text-main-white"
             : "badge-error bg-second-red text-main-white"
