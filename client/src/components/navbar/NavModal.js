@@ -3,6 +3,7 @@ import SocialMedia from "./SocialMedia";
 import closeButton from "./../../assets/Icons/close.svg";
 import "./NavModal.css";
 import { NavLink } from "react-router-dom";
+import ModalsAuth from "../Modal/ModalsAuth";
 
 const NavModal = () => {
   const options = [
@@ -67,15 +68,18 @@ const NavModal = () => {
           <ul className="my-8 w-fit">
             {options.map((op) => (
               <>
-                {!op.font && <li className="modal-list_secLink"><NavLink to={op.to}>{op.name}</NavLink></li>}
+                {!op.font && (
+                  <li className="modal-list_secLink">
+                    <NavLink to={op.to}>{op.name}</NavLink>
+                  </li>
+                )}
               </>
             ))}
           </ul>
 
           {/* login options */}
           <ul className="my-8 w-fit">
-            <li className="modal-list_logLink">Inicia sesión</li>
-            <li className="modal-list_logLink">Registrate</li>
+            <ModalsAuth boolean={false} />
           </ul>
 
           <div class="divider font-bold mt-6">Redes Sociales</div>

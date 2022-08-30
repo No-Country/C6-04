@@ -1,6 +1,7 @@
 import Diart from "./../../assets/Pictures/diart-logo.svg";
 import ImageRight from "./../../assets/Pictures/img-right.svg";
 import Button from "../Button";
+import ModalsAuth from "../Modal/ModalsAuth";
 
 const HeaderHome = () => {
   return (
@@ -13,14 +14,7 @@ const HeaderHome = () => {
           extraordinarios.
         </p>
         <div className="mt-4">
-          <Button
-            className="btn rounded-xl mr-2 w-32 border-none bg-second-blue font-black hover:bg-second-blue/50 text-main-white text-md"
-            text="Registrate"
-          />
-          <Button
-            className="btn rounded-xl w-34 border-2 border-main-white bg-main-blue font-black hover:border-main-white hover:bg-main-blue/50 text-main-white text-md"
-            text="Inicia sesión"
-          />
+          <ModalsAuth boolean={true} />
         </div>
       </article>
       <article>
