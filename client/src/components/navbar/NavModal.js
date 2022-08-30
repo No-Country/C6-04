@@ -4,6 +4,7 @@ import closeButton from "./../../assets/Icons/close.svg";
 import "./NavModal.css";
 import { NavLink } from "react-router-dom";
 import ModalsAuth from "../Modal/ModalsAuth";
+import Metamask from "../../services/Metamask";
 
 const NavModal = () => {
   const options = [
@@ -81,6 +82,12 @@ const NavModal = () => {
           <ul className="my-8 w-fit">
             <ModalsAuth boolean={false} />
           </ul>
+
+          <div class="divider font-bold mt-6">Billetera</div>
+
+          <article className='mt-8 flex justify-center'>
+            <Metamask />
+          </article>
 
           <div class="divider font-bold mt-6">Redes Sociales</div>
 

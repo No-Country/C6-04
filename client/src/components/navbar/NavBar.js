@@ -22,7 +22,7 @@ const NavBar = () => {
           </div>
           <input
             type="text"
-            className="bg-second-blue px-12 h-12 opacity-75 placeholder:text-white text-white border-2 border-main-white text-sm rounded-2xl"
+            className="input input-warning input-info bg-second-blue px-12 h-12 opacity-75 placeholder:text-white text-white border-2 border-main-white text-sm rounded-2xl"
             placeholder="Colecciones, NFTs o usuarios."
           />
           <div class="text-white font-bold text-sm bg-main-white bg-opacity-30 py-0.5 px-2 rounded-lg absolute hidden md:block md:right-2.5 top-3">
