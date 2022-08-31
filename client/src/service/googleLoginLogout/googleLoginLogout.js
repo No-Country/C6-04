@@ -5,6 +5,8 @@ import Google from "../../assets/Icons/google.svg";
 
 function googleLogInOut({ className }) {
 
+  console.log(process.env.REACT_APP_GOOGLE_ID)
+
   gapi.load("client:auth2", () => {
     gapi.client.init({
       clientId: process.env.REACT_APP_GOOGLE_ID,

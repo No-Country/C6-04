@@ -3,14 +3,14 @@ import NavBar from "./components/navbar/NavBar";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
-import Pantalla from "./PantallaNFT";
+import Pantalla from "./pages/NFTView";
 import Google from "./service/googleLoginLogout/googleLoginLogout"
 
 function App() {
   return (
     <>
       <NavBar />
-
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/acerca-de" element={<Project />} />
