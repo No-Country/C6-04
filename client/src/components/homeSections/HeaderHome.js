@@ -1,6 +1,5 @@
 import Diart from "./../../assets/Pictures/diart-logo.svg";
 import ImageRight from "./../../assets/Pictures/img-right.svg";
-import Button from "../Button";
 import ModalsAuth from "../Modal/ModalsAuth";
 
 const HeaderHome = () => {
@@ -21,7 +20,6 @@ const HeaderHome = () => {
         <img src={ImageRight} alt="ImageRight" className="w-72 h-auto" />
       </article>
 
-      {/* <img src={Background} alt="Fondo" className="w-full h-full bg-center" />    */}
     </section>
   );
 };
