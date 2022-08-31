@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
 import NFTView from "./pages/NFTView";
 import Search from "./pages/Search";
+import Collection from "./pages/Collection";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/equipo" element={<Project />} />
         <Route path="/buscar" element={<Search />} />
         <Route path="/nft" element={<NFTView />} />
+        <Route path="/collection" element={<Collection />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
