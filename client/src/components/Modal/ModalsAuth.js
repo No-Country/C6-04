@@ -2,7 +2,7 @@ import Title from "../title/title";
 import Label from "../label/label";
 import Input from "../input/input";
 import Boton from "../botones/boton";
-import Button from "../Button";
+import Button from "../botones/Button";
 import Google from "../../assets/Icons/google.svg";
 import Comprobado from "../../assets/Icons/comprobado.svg";
 import useToggle from "../../hooks/useToggle";

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Label from "./components/label/label";
-import Title from "./components/title/title";
-import Card from "./components/cards/card";
-import Mico from "./assets/Pictures/Mico.jpg";
-import Carrito from "./assets/Icons/carrito.svg";
-import Boton from "./components/botones/boton";
-import ModalImage from "./components/Modal/ModalImage";
-import Expandir from "./assets/Icons/Expandir.svg";
+import Label from "../components/label/label";
+import Title from "../components/title/title";
+import Card from "../components/cards/card";
+import Mico from "../assets/Pictures/Mico.jpg";
+import Carrito from "../assets/Icons/carrito.svg";
+import Boton from "../components/botones/boton";
+import ModalImage from "../components/Modal/ModalImage";
+import Expandir from "../assets/Icons/Expandir.svg";
 
-const Pantalla = () => {
+const NFTView = () => {
 
   const [clickedImg, setClickedImg] = useState(null);
 
@@ -96,4 +96,4 @@ const Pantalla = () => {
   );
 }
 
-export default Pantalla;
+export default NFTView;
