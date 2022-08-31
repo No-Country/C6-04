@@ -3,8 +3,8 @@ import { gapi } from "gapi-script";
 import axios from 'axios';
 import Google from "../../assets/Icons/google.svg";
 
-function googleLogInOut({ className }) {
-
+function googleLogInOut() {
+  
   gapi.load("client:auth2", () => {
     gapi.client.init({
       clientId: process.env.REACT_APP_GOOGLE_ID,
