@@ -8,7 +8,7 @@ import Boton from "../components/botones/boton";
 import ModalImage from "../components/Modal/ModalImage";
 import Expandir from "../assets/Icons/Expandir.svg";
 
-const Pantalla = () => {
+const NFTView = () => {
 
   const [clickedImg, setClickedImg] = useState(null);
 
@@ -96,4 +96,4 @@ const Pantalla = () => {
   );
 }
 
-export default Pantalla;
+export default NFTView;
