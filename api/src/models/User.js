@@ -8,9 +8,9 @@ const User = Schema({
             validator: (v) => /^[a-zñáéíóú\s]{3,}$/i.test(v),
             message: props => {
                if (props.value.length < 3){
-                  return 'NFT name accept minimun 3 letters';
+                  return 'Username accept minimun 3 letters';
                } else {
-                  return 'NFT name only accept letters';
+                  return 'Username only accept letters';
                }
             }
         } 

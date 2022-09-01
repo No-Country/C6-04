@@ -4,12 +4,13 @@ const { getAllCategories,
         createCategory, 
         modifyCategory, 
         deleteCategory } = require('../controllers/categories.controllers');
+const { validarCampos } = require('../middlewares/validar.campos')
 
 
 
 router.get('/', getAllCategories);
 router.get('/:id', getCategoryById);
-router.post('/', createCategory);
+router.post('/', [validarCampos], createCategory);
 router.put('/:id', modifyCategory);
 router.delete('/:id', deleteCategory);
 

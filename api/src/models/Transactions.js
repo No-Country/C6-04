@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+var mongoose = require('mongoose')
 require('mongoose-double')(mongoose);
 
 const Transactions = Schema({
