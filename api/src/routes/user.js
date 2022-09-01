@@ -6,20 +6,11 @@ const { createUser,
         getUser,
         getUsers, 
         updateUser, 
-        deleteUser } = require("../controllers/users.controllers");
+        deleteUser } = require("../controllers/user.controllers");
         
-// check validator
-const { validarCampos } = require('../middlewares/validar.campos.js');
+// routes
 
-router.post('/',
-    [
-        check('username', 'Username is required').not().isEmpty(),
-        check('email', 'Email is required and must be valid').not().isEmpty().isEmail(),
-        check('password', 'Password is required').not().isEmpty(),
-        validarCampos
-    ], 
-    createUser
-);
+router.post('/',createUser);
 router.get('/', getUsers);
 router.get('/:id', getUser);
 router.put('/:id', updateUser);

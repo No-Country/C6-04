@@ -3,6 +3,7 @@ import NavBar from "./components/navbar/NavBar";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
+import Google from "./service/googleLoginLogout/googleLoginLogout"
 import NFTView from "./pages/NFTView";
 import Search from "./pages/Search";
 import Collection from "./pages/Collection";

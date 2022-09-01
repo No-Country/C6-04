@@ -3,11 +3,11 @@ import Label from "../label/label";
 import Input from "../input/input";
 import Boton from "../botones/boton";
 import Button from "../botones/Button";
-import Google from "../../assets/Icons/google.svg";
 import Comprobado from "../../assets/Icons/comprobado.svg";
 import useToggle from "../../hooks/useToggle";
 import ModalBox from "./ModalBox";
 import { useState } from "react";
+import GoogleLogInOut from "../../service/googleLoginLogout/googleLoginLogout";
 
 function ModalsAuth({ boolean }) {
   const [state, { handleToggle }] = useToggle();
@@ -102,13 +102,9 @@ function ModalsAuth({ boolean }) {
               <div className="grid place-items-center ">
                 <Label className="text-lg font-bold" text="O" />
               </div>
+              
+              <GoogleLogInOut />
 
-              <Boton
-                className="flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-2  rounded-full text-black font-semibold text-lg  border-white w-full bg-main-gray m-2"
-                google={Google}
-                alt="Google icon"
-                text="Continuar con Google"
-              />
             </div>
           )}
 
@@ -131,12 +127,8 @@ function ModalsAuth({ boolean }) {
                   setVentanas(3);
                 }}
               />
-              <Boton
-                className="flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out transform md:py-2 py-1 rounded-full text-black font-semibold md:text-lg border-white md:w-full w-56 bg-main-gray md:m-2 m-4"
-                text="Continuar con Google"
-                google={Google}
-                alt="Google icon"
-              />
+
+              <GoogleLogInOut />
 
               <br />
 
@@ -175,6 +167,7 @@ function ModalsAuth({ boolean }) {
                 className="h-9 w-64 md:w-full border border-black rounded-xl md:p-2 bg-transparent"
                 text="Ingrese su contraseña"
                 types="password"
+                
               />
 
               {/* <br /> */}

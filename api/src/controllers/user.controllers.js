@@ -4,7 +4,7 @@ const User_type = require('../models/User_type');
 
 
 const createUser = async (req, res) => {
-    const { username, email, password, image, description } = req.body;
+    const { username, email, password } = req.body;
     try {
         const existMail = await User.findOne({ email });
         // if the user email already exists

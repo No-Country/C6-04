@@ -3,7 +3,7 @@ const { getAllCollections,
         getCollectionById, 
         createCollection, 
         modifyCollection, 
-        deleteCollection } = require('../controllers/collections.controllers');
+        deleteCollection } = require('../controllers/collections.controller');
 
 
 router.get('/', getAllCollections);
