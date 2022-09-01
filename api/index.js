@@ -1,7 +1,7 @@
 require('dotenv').config(); //para usar enviroment variables
 const morgan = require ('morgan');
 const cookieParser = require('cookie-parser');
-//const routes = require ('./src/routes/index.js');
+const routes = require ('./src/routes/index.js');
 
 //connect con db
 
@@ -22,7 +22,7 @@ server.use(morgan('dev'));
 server.use(express.json());
 server.use(cookieParser());
 server.use(cors()); // cors para que se pueda hacer peticiones desde otro dominio 
-//server.use('/',routes);
+server.use('/',routes);
 server.use(express.urlencoded({ extended: true }));
 
 //control de errores

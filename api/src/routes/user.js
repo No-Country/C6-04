@@ -6,10 +6,9 @@ const { createUser,
         getUser,
         getUsers, 
         updateUser, 
-        deleteUser } = require("../controllers/users.controllers");
+        deleteUser } = require("../controllers/user.controllers");
         
-// check validator
-//const { validarCampos } = require('../middlewares/validar.campos.js');
+// routes
 
 router.post('/',createUser);
 router.get('/', getUsers);
