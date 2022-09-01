@@ -5,10 +5,11 @@ import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
 import NFTView from "./pages/NFTView";
 import Search from "./pages/Search";
+import Collection from "./pages/Collection";
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen bg-main-blue">
       <NavBar />
 
       <Routes>
@@ -16,11 +17,12 @@ function App() {
         <Route path="/acerca-de" element={<Project />} />
         <Route path="/nosotros" element={<Project />} />
         <Route path="/equipo" element={<Project />} />
-        <Route path="/buscar" element={<Search />} />
+        <Route path="/descubrir" element={<Search />} />
         <Route path="/nft" element={<NFTView />} />
+        <Route path="/coleccion" element={<Collection />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

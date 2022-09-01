@@ -9,18 +9,18 @@ import Metamask from "../../services/Metamask";
 const NavModal = () => {
   const options = [
     {
-      name: "Colecciones",
-      to: "/",
-      font: true,
-    },
-    {
-      name: "Tendencias",
-      to: "/",
-      font: true,
-    },
-    {
       name: "Categorias",
-      to: "/",
+      to: "/categoria",
+      font: true,
+    },
+    {
+      name: "Colecciones",
+      to: "/descubrir",
+      font: true,
+    },
+    {
+      name: "NFTs",
+      to: "/descubrir",
       font: true,
     },
     {
@@ -60,7 +60,7 @@ const NavModal = () => {
           <ul className="my-8 w-fit">
             {options.map((op) => (
               <>
-                {op.font && <li className="modal-list_mainLink">{op.name}</li>}
+                {op.font && <li className="modal-list_mainLink"><NavLink to={op.to}>{op.name}</NavLink></li>}
               </>
             ))}
           </ul>
