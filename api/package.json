@@ -20,6 +20,7 @@
     "google-auth-library": "^8.1.1",
     "mongoose": "^6.5.4",
     "mongoose-double": "^0.0.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
   }
 }
