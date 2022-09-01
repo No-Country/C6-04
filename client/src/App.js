@@ -3,7 +3,7 @@ import NavBar from "./components/navbar/NavBar";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
-import Google from "./service/googleLoginLogout/googleLoginLogout"
+import Perfil from "./pages/Perfil";
 import NFTView from "./pages/NFTView";
 import Search from "./pages/Search";
 import Collection from "./pages/Collection";
@@ -18,6 +18,14 @@ function App() {
         <Route path="/acerca-de" element={<Project />} />
         <Route path="/nosotros" element={<Project />} />
         <Route path="/equipo" element={<Project />} />
+        
+        <Route path="/perfil" element={<Perfil />}>
+          <Route path="editar" element={<Perfil />} />
+        </Route>
+
+        <Route path="/tus-nft" element={<Perfil />} />
+        <Route path="/historial" element={<Perfil />} />
+        
         <Route path="/descubrir" element={<Search />} />
         <Route path="/nft" element={<NFTView />} />
         <Route path="/coleccion" element={<Collection />} />
