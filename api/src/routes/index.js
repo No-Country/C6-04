@@ -4,7 +4,7 @@ const categories = require('./categories')
 
 
 router.use('/user', require('./user'));
-router.use('/nft', require('./nft.js'));
+//router.use('/nft', require('./nft.js'));
 router.use('/collections', require('./collections'));
 router.use('/categories', categories);
 router.use('/creators', require('./creators'));
