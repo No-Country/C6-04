@@ -6,10 +6,11 @@ import Project from "./pages/Project";
 import Google from "./service/googleLoginLogout/googleLoginLogout"
 import NFTView from "./pages/NFTView";
 import Search from "./pages/Search";
+import Collection from "./pages/Collection";
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen bg-main-blue">
       <NavBar />
       
       <Routes>
@@ -19,10 +20,12 @@ function App() {
         <Route path="/equipo" element={<Project />} />
         <Route path="/login" element={<Google />} />
         <Route path="/buscar" element={<Search />} />
+        <Route path="/descubrir" element={<Search />} />
         <Route path="/nft" element={<NFTView />} />
+        <Route path="/coleccion" element={<Collection />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

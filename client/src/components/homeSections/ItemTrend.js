@@ -1,6 +1,8 @@
+import { NavLink } from "react-router-dom";
+
 const ItemTrend = ({ number, image, name, price }) => {
   return (
-    <a href="/">
+    <NavLink to="/nft">
       <li
         key={number}
         className="flex bg-blue-300/80 justify-evenly rounded-3xl py-3 px-3 items-center w-80"
@@ -19,7 +21,7 @@ const ItemTrend = ({ number, image, name, price }) => {
           </section>
         </div>
       </li>
-    </a>
+    </NavLink>
   );
 };
 

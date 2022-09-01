@@ -1,6 +1,7 @@
 import Diart from "./../../assets/Pictures/diart-logo.svg";
 import ImageRight from "./../../assets/Pictures/img-right.svg";
 import ModalsAuth from "../Modal/ModalsAuth";
+import { NavLink } from "react-router-dom";
 
 const HeaderHome = () => {
   return (
@@ -8,7 +9,7 @@ const HeaderHome = () => {
       <article>
         <img src={Diart} alt="Diart" className="md:pt-8 w-72 h-auto" />
         <p className="pt-8 text-xl font-bold text-main-white">
-          <span className="text-main-yellow">Descubre</span> y recolecta NFTs{" "}
+          <NavLink to='/descubrir'><span className="text-main-yellow">Descubre</span></NavLink> y recolecta NFTs
           <br />
           extraordinarios.
         </p>
