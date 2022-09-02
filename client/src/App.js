@@ -18,7 +18,7 @@ function App() {
         <Route path="/acerca-de" element={<Project />} />
         <Route path="/nosotros" element={<Project />} />
         <Route path="/equipo" element={<Project />} />
-        <Route path="/login" element={<Google />} />
+        {/* <Route path="/login" element={<Google />} /> */}
         <Route path="/buscar" element={<Search />} />
 
         

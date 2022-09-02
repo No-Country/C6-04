@@ -106,19 +106,24 @@ const PerfilEdit = () => {
       <h1 className="font-bold text-3xl text-main-black">Editar perfil</h1>
       <section className="flex flex-col md:flex-row">
         {/* Image */}
-          <img
-            src="https://placeimg.com/192/192/people"
-            className="w-52 rounded-full mt-4 md:m-10 z-10"
-            alt=""
-          />
-          <figure className="float-right">
-            <img
-              src={Edit}
-              alt=""
-              className="rounded-full"
-            />
-          </figure>
-
+        <figure className="display-block md:display-hidden lg:display-block">
+          <label
+            for="dropzone-file"
+            class="rounded-full mt-4 xl:m-10 flex flex-col bg-gray-500 cursor-pointer hover:bg-gray-600 "
+          >
+            <div class="flex flex-col justify-center items-center">
+              <img
+                src="https://placeimg.com/192/192/people"
+                className="w-52 rounded-full hover:opacity-40"
+                alt=""
+              />
+              <input id="dropzone-file" type="file" class="hidden" />
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <img src={Edit} alt="" className="-mt-52 rounded-full" />
+            </div>
+          </label>
+        </figure>
         <article className="flex flex-col gap-y-4 md:ml-20 mt-12 font-semibold">
           {/* Nombres */}
           <section className="flex flex-col md:flex-row items-center md:w-[400px]">
@@ -126,9 +131,7 @@ const PerfilEdit = () => {
               <h1 className="font-bold text-xl text-main-black underline">Nombres:</h1>
             </article>
             <article className="w-1/2 flex justify-start md:justify-end">
-              <label className="flex justify-center bg-main-white bg-opacity-30 rounded-full p-2 px-3 min-w-[120px] md:min-w-[200px] line-clamp-1">
-                Nombre 1 - Nombre 2
-              </label>
+              <input className="flex justify-center bg-main-white bg-opacity-30 rounded-full p-2 px-3 min-w-[120px] md:min-w-[200px] line-clamp-1 placeholder-main-black" placeholder="Nombre 1 - Nombre 2" />              
             </article>
           </section>
           {/* Apellidos */}
@@ -137,9 +140,7 @@ const PerfilEdit = () => {
               <h1 className="font-bold text-xl text-main-black underline">Apellidos:</h1>
             </article>
             <article className="w-1/2 flex justify-start md:justify-end">
-              <label className="flex justify-center bg-main-white bg-opacity-30 rounded-full p-2 px-3 min-w-[120px] md:min-w-[200px] line-clamp-1">
-                Apellido 1 - Apellido 2
-              </label>
+              <input className="flex justify-center bg-main-white bg-opacity-30 rounded-full p-2 px-3 min-w-[120px] md:min-w-[200px] line-clamp-1 placeholder-main-black" placeholder="Apellido 1 - Apellido 2" />
             </article>
           </section>
           {/* Nacimiento */}
@@ -150,19 +151,23 @@ const PerfilEdit = () => {
               </h1>
             </article>
             <article className="w-1/2 flex justify-start md:justify-end">
-              <label className="flex justify-center bg-main-white bg-opacity-30 rounded-full p-2 px-3 min-w-[120px] md:min-w-[200px] line-clamp-1">
-                12 - 08 - 1993
-              </label>
+              <input className="flex justify-center bg-main-white bg-opacity-30 rounded-full p-2 px-3 min-w-[120px] md:min-w-[200px] line-clamp-1 placeholder-main-black" placeholder="12 - 08 - 1993" />
             </article>
           </section>
         </article>
       </section>
-      <section className="flex justify-center">
-        <NavLink to="editar">
+      <section className="flex justify-center gap-x-20">
+        <NavLink to="/perfil">
           <Button
-            className="btn bg-second-yellow bg-opacity-90 text-main-black rounded-2xl hover:border-second-yellow hover:bg-second-yellow"
-            text="Editar"
+            className="btn bg-second-red bg-opacity-90 text-main-white rounded-2xl hover:border-second-red hover:bg-second-red text-md"
+            text="Cancelar"
           />
+        </NavLink>
+        <NavLink to="/perfil">
+          <Button
+            className="btn bg-second-green bg-opacity-90 text-main-white rounded-2xl hover:border-second-green hover:bg-second-green text-md"
+            text="Guardar"
+          />{" "}
         </NavLink>
       </section>
     </>
