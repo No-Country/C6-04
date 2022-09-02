@@ -136,7 +136,7 @@ const PerfilEdit = () => {
             <article className="w-1/2 flex justify-start md:justify-end">
               <input
                 className="flex justify-center bg-main-white bg-opacity-30 rounded-full p-2 px-3 min-w-[120px] md:min-w-[200px] line-clamp-1 placeholder:text-main-black"
-                placeholder="Name 1 - Name 2"
+                placeholder="Nombre 1 - Nombre 2"
               />
             </article>
           </section>
