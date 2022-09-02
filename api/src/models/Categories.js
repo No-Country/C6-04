@@ -5,6 +5,10 @@ const Categories = Schema({
         type: String,
         required: [true, 'Category name is required']
     },
+    img: {
+        type: String,
+        required: [true,"Category image is required"]
+    },
 });
 
 Categories.method('toJSON', function () {

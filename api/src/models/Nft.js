@@ -15,17 +15,22 @@ const Nft = Schema({
     details: {
         creator: {
             type: Schema.Types.ObjectId,
-            ref: 'Creators'},
+            ref: 'Creators'
+        },
         owner: {
             type: Schema.Types.ObjectId,
-            ref: 'User'},
+            ref: 'User'
+        },
         contract_address: String,
         token_id: Number
+    },
+    likes: {
+        type: Number
     },
     create_date: {
         type: String
     },
-    collection: { 
+    collections: { //? collection de nft
         type: [Schema.Types.ObjectId],
         ref: 'Collections'  
     },
@@ -36,6 +41,10 @@ const Nft = Schema({
     price: {
         type: mongoose.Types.Double
     },
+    sale_status: {
+        type: Boolean,
+        default: false  
+    },
     currencies:  {
         type: Schema.Types.ObjectId,
         ref: 'Currencies'  
@@ -43,10 +52,6 @@ const Nft = Schema({
     files_types: {
         type: Schema.Types.ObjectId,
         ref: 'Files_types'  
-    },
-    sale_status: {
-        type: Boolean,
-        default: false
     }
 });
 Nft.method('toJSON', function () {
