@@ -7,7 +7,7 @@ import Comprobado from "../../assets/Icons/comprobado.svg";
 import useToggle from "../../hooks/useToggle";
 import ModalBox from "./ModalBox";
 import { useState } from "react";
-import GoogleLogInOut from "../../service/googleLoginLogout/googleLoginLogout";
+import GoogleLogInOut from "../../services/googleLoginLogout/googleLoginLogout";
 
 function ModalsAuth({ boolean }) {
   const [state, { handleToggle }] = useToggle();
