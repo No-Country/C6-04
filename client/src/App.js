@@ -12,12 +12,15 @@ function App() {
   return (
     <div className="min-h-screen bg-main-blue">
       <NavBar />
-
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/acerca-de" element={<Project />} />
         <Route path="/nosotros" element={<Project />} />
         <Route path="/equipo" element={<Project />} />
+        {/* <Route path="/login" element={<Google />} /> */}
+        <Route path="/buscar" element={<Search />} />
+
         
         <Route path="/perfil" element={<Perfil />}>
           <Route path="editar" element={<Perfil />} />
