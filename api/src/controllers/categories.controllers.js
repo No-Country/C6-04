@@ -28,6 +28,7 @@ const getCategoryById = async (req, res) => {
 };
 
 const createCategory = async (req, res) => {
+    console.log("putoooo")
     try {
         const newCategory = new Categories(req.body);
         await newCategory.save();
